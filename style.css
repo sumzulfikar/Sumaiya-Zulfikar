@@ -84,43 +84,73 @@ text-decoration: none;
 
 }
 
-/*Applying grid style in this section*/
+/*Style for About me Section*/
 
 #about-me{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "about-me-title1 background1 background1 skills"
-                          "work first-app1 first-app1 skills"
-                          "work second-app1 third-app1 skills";   
-   
-     border: solid 3px var(--yellow);
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "about-me-title1 background1 background1";                           
+    border: solid 3px var(--yellow);
 }
 
 #about-me-title{
-    /* grid-row: 0/2; */
     grid-area: about-me-title1;
 }
 #background{
-    /* grid-column: 2 / 4; */
-    grid-area: background1;
+   grid-area: background1;
 }
 
+/*Style for My skills Section*/
+
 #skills{
-    /* grid-row: 0/5; 
-    grid-column: 4/5; */
-    grid-area: skills;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 15% 85%;
+    grid-template-areas: "my-skills logo";
 }
-#work{
+
+#my-skills{
+    grid-area: my-skills;
+}
+
+#logo{
+   grid-area: logo;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+
+
+
+
+
+
+
+
+
+
+#my-work{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "work first-app1 first-app1"
+    "work second-app1 third-app1";
+}
+
+
+
+
+
+.my-work{
     grid-area:work;
     /* grid-row: 4/5; 
     grid-column: 1/2; */
 }
-#first-app{
+/* #first-app{
     grid-area: first-app1;
     
     display: flex;
@@ -133,20 +163,20 @@ text-decoration: none;
      display: flex;
        flex: 25%;
     /* max-width: 200px;
-    max-height: 200px;  */
+    max-height: 200px;  
 }
 
 
 #second-app{
     grid-area: second-app1;
     /* max-width: 500px;
-    max-height: 400px; */
+    max-height: 400px; 
 }
 
 #third-app{
     grid-area: third-app1;
   
-}
+} */
 
 .lg, #li, #git{
     max-width: 100px;
