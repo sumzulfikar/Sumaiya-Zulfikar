@@ -1,9 +1,45 @@
-/* Global style of the webpage*/
-:root{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+* {
+    outline:1px solid salmon;
+}
+/* Global style of the webpage*//*#016295#283d5a #e5eec1#1c1c1e*#557c83#3aada8#a2d5ac*/
+:root {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    --light:#dee7e8;
+    --pop:#ec5743;
+    --yellow:#fc9a1f;
+ 
+   /* --h4:#04c8a1;*/
+    --text:#1c1c1e;
+ 
+    /*background-color: var(--black);*/
+    
+}
+/*Defining colour and font height for h1,h2, h3 and h4*/
+body{
+    background-color: var(--light);
+    color: var(--text);
+}
+h1{
+    font-size:40px;
+}
+h2{
+   
+    font-size: 36px;
 }
 
+h3{
+    
+    font-size: 32px;
+}
+p{
+    
+    font-size:28px ;
+}
+h4{
+   
+    font-size: 20px;
 
+}
 /*Device responsive navigation*/
 @media screen and (max-width: 768px) {
 #menu{
@@ -20,7 +56,8 @@ text-decoration: none;
                          "b"
                          "c"
                          "d";
-}
+  
+ }
 
 
 
@@ -28,8 +65,11 @@ text-decoration: none;
 @media screen and (min-width:  992px) {
 #menu{
     display:flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-self: flex-end;
     text-decoration: none;
+    padding:20px;
+
  }
 
  #summary{
@@ -37,7 +77,9 @@ text-decoration: none;
     grid-template-rows: 1fr;
     grid-template-columns:15% 35% 15% 35% ;
     grid-template-areas: "a b c d";
-}
+    border: solid 3px var(--yellow);
+  
+ }
 
 
 }
@@ -48,17 +90,74 @@ text-decoration: none;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "e f f g"
-                          "work i  i g"
-                          "work j k g";
+    grid-template-areas: "about-me-title1 background1 background1 skills"
+                          "work first-app1 first-app1 skills"
+                          "work second-app1 third-app1 skills";   
+   
+     border: solid 3px var(--yellow);
+}
+
+#about-me-title{
+    /* grid-row: 0/2; */
+    grid-area: about-me-title1;
+}
+#background{
+    /* grid-column: 2 / 4; */
+    grid-area: background1;
+}
+
+#skills{
+    /* grid-row: 0/5; 
+    grid-column: 4/5; */
+    grid-area: skills;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#work{
+    grid-area:work;
+    /* grid-row: 4/5; 
+    grid-column: 1/2; */
+}
+#first-app{
+    grid-area: first-app1;
+    
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+
+
+#second-app #third-app{
+     display: flex;
+       flex: 25%;
+    /* max-width: 200px;
+    max-height: 200px;  */
+}
+
+
+#second-app{
+    grid-area: second-app1;
+    /* max-width: 500px;
+    max-height: 400px; */
+}
+
+#third-app{
+    grid-area: third-app1;
+  
 }
 
 .lg, #li, #git{
     max-width: 100px;
-    max-height: 75px;
+    max-height: 100px;
 }
-.a{
+ 
+
+a{
+    color: var(--pop);
     text-decoration: none;
+    font-size: 32px;
 }
 
 #contact-me{
@@ -66,6 +165,7 @@ display: grid;
 grid-template-rows: 1fr;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-areas: "co li git";
+
 }
 .footer{
     
