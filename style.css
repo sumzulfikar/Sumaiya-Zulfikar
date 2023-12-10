@@ -45,7 +45,7 @@ h4{
 #menu{
     display:flex;
 flex-flow:column wrap;
-justify-content: flex-end;
+align-items: end;
 text-decoration: none;
  }
  #summary{
@@ -59,14 +59,13 @@ text-decoration: none;
   
  }
 
-
-
 }
 @media screen and (min-width:  992px) {
 #menu{
     display:flex;
-    justify-content: space-between;
-    align-self: flex-end;
+    justify-content: space-evenly;
+    width:50%;
+    align-items: end;
     text-decoration: none;
     padding:20px;
 
@@ -80,7 +79,6 @@ text-decoration: none;
     border: solid 3px var(--yellow);
   
  }
-
 
 }
 
@@ -122,34 +120,41 @@ text-decoration: none;
     /* align-items: center; */
 }
 
-
-
-
-
-
-
-
-
-
+/*Style for My Works Section*/
 
 #my-work{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-    "work first-app1 first-app1"
-    "work second-app1 third-app1";
+    grid-template-columns: 15% 1fr 1fr;
+     grid-template-areas:
+    "work first-app first-app"
+    "work second-app third-app"; 
 }
 
 
-
-
-
 .my-work{
+    /* grid-row: 1/2;
+    grid-column: 1; */
     grid-area:work;
     /* grid-row: 4/5; 
     grid-column: 1/2; */
 }
+#first-app{
+/* grid-column: 1/-1;
+grid-row: 1; */
+grid-area:first-app;
+background-repeat: no-repeat;
+}
+#second-app{
+    grid-row: 2;
+    grid-column: 2;
+}
+#third-app{
+    grid-row: 2;
+    grid-column: 3;
+
+}
+
 /* #first-app{
     grid-area: first-app1;
     
