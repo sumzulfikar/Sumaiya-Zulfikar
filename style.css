@@ -1,12 +1,13 @@
-* {
+/* * {
     outline:1px solid salmon;
-}
+} */
 /* Global style of the webpage*//*#016295#283d5a #e5eec1#1c1c1e*#557c83#3aada8#a2d5ac*/
 :root {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
     --light:#dee7e8;
     --pop:#ec5743;
     --yellow:#fc9a1f;
+    --white:white;
  
    /* --h4:#04c8a1;*/
     --text:#1c1c1e;
@@ -40,14 +41,16 @@ h4{
     font-size: 20px;
 
 }
-/*Device responsive navigation*/
+
 @media screen and (max-width: 768px) {
+    /*Mobile Device responsive navigation*/
 #menu{
     display:flex;
 flex-flow:column wrap;
 align-items: end;
 text-decoration: none;
  }
+ /*Mobile Device responsive Summary*/
  #summary{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -58,9 +61,30 @@ text-decoration: none;
                          "d";
   
  }
+/*Mobile Device responsive About me Section*/
+ #about-me{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
+    grid-template-areas: "about-me-title1" 
+                         "background1"
+                        "background1";                           
+    border: solid 3px var(--yellow);
+}
+
+/* Mobile Device responsive skills layout*/
+#logo{
+    grid-area: logo;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     /* align-items: center; */
+ }
+
 
 }
 @media screen and (min-width:  992px) {
+/*Desktop Device responsive Navigation*/
 #menu{
     display:flex;
     justify-content: space-evenly;
@@ -70,7 +94,7 @@ text-decoration: none;
     padding:20px;
 
  }
-
+/*Desktop Device responsive Summary*/
  #summary{
     display: grid;
     grid-template-rows: 1fr;
@@ -80,9 +104,7 @@ text-decoration: none;
   
  }
 
-}
-
-/*Style for About me Section*/
+ /*Desktop Device responsive About me Section*/
 
 #about-me{
     display: grid;
@@ -91,6 +113,22 @@ text-decoration: none;
     grid-template-areas: "about-me-title1 background1 background1";                           
     border: solid 3px var(--yellow);
 }
+/* Desktop Device responsive skills layout*/
+#logo{
+    grid-area: logo;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     /* align-items: center; */
+ }
+ .footer{
+    display: flex;
+    flex-direction: row;
+   align-items: flex-start;
+ }
+
+}
+
 
 #about-me-title{
     grid-area: about-me-title1;
@@ -112,98 +150,68 @@ text-decoration: none;
     grid-area: my-skills;
 }
 
-#logo{
-   grid-area: logo;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /* align-items: center; */
-}
+
 
 /*Style for My Works Section*/
 
 #my-work{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-columns: 15% 1fr 1fr;
-     grid-template-areas:
-    "work first-app first-app"
-    "work second-app third-app"; 
+    grid-template-areas:"work first-app1 first-app1"
+                        "work second-app third-app"; 
+    overflow: hidden;
+    gap: 10px;
 }
 
 
-.my-work{
-    /* grid-row: 1/2;
-    grid-column: 1; */
+#my-work{
+    
     grid-area:work;
-    /* grid-row: 4/5; 
-    grid-column: 1/2; */
+    
 }
 #first-app{
-/* grid-column: 1/-1;
-grid-row: 1; */
-grid-area:first-app;
-background-repeat: no-repeat;
+    grid-area: 1 / 2 / 2/ span 4;
+   
 }
 #second-app{
-    grid-row: 2;
-    grid-column: 2;
+    grid-area: second-app;
 }
 #third-app{
-    grid-row: 2;
-    grid-column: 3;
-
+    grid-area: third-app;
 }
 
-/* #first-app{
-    grid-area: first-app1;
-    
-    display: flex;
-    flex-flow: column wrap;
- 
+.project-image{
+ width:100%;
 }
 
-
-#second-app #third-app{
-     display: flex;
-       flex: 25%;
-    /* max-width: 200px;
-    max-height: 200px;  
+ #li, #git,#em, #ph{
+    max-width: 50px;
+    max-height: 50px;
 }
-
-
-#second-app{
-    grid-area: second-app1;
-    /* max-width: 500px;
-    max-height: 400px; 
-}
-
-#third-app{
-    grid-area: third-app1;
-  
-} */
-
-.lg, #li, #git{
+.lg{
     max-width: 100px;
     max-height: 100px;
 }
- 
-
 a{
-    color: var(--pop);
     text-decoration: none;
     font-size: 32px;
 }
+/*Navigation button decoration */
+.option{
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid var(--pop);
+    color: var(--pop);
+    background-color: var(--white);
+    align-self: flex-end;
+    /* transition: all 0.5s ease-in-out; */
+}
 
-#contact-me{
-display: grid;
-grid-template-rows: 1fr;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-areas: "co li git";
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 
 }
-.footer{
-    
-    margin-left: 50%;
-    padding: 50%;
-}
+
