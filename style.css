@@ -46,9 +46,9 @@ h4{
     /*Mobile Device responsive navigation*/
 #menu{
     display:flex;
-flex-flow:column wrap;
-align-items: end;
-text-decoration: none;
+    flex-flow:column wrap;
+    align-items: end;
+    text-decoration: none;
  }
  /*Mobile Device responsive Summary*/
  #summary{
@@ -69,7 +69,7 @@ text-decoration: none;
     grid-template-areas: "about-me-title1" 
                          "background1"
                         "background1";                           
-    border: solid 3px var(--yellow);
+    
 }
 
 /* Mobile Device responsive skills layout*/
@@ -80,7 +80,13 @@ text-decoration: none;
      justify-content: space-around;
      /* align-items: center; */
  }
+ /* Mobile Device responsive footer*/
+ footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
+}
 
 }
 @media screen and (min-width:  992px) {
@@ -100,7 +106,7 @@ text-decoration: none;
     grid-template-rows: 1fr;
     grid-template-columns:15% 35% 15% 35% ;
     grid-template-areas: "a b c d";
-    border: solid 3px var(--yellow);
+    border: solid 1px var(--yellow);
   
  }
 
@@ -111,7 +117,7 @@ text-decoration: none;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "about-me-title1 background1 background1";                           
-    border: solid 3px var(--yellow);
+    /* border: solid 3px var(--yellow); */
 }
 /* Desktop Device responsive skills layout*/
 #logo{
@@ -121,11 +127,13 @@ text-decoration: none;
      justify-content: space-around;
      /* align-items: center; */
  }
- .footer{
+ /* Desktop Device responsive footer*/
+ footer{
     display: flex;
     flex-direction: row;
-   align-items: flex-start;
- }
+    justify-content: space-evenly;
+
+}
 
 }
 
@@ -144,6 +152,8 @@ text-decoration: none;
     grid-template-rows: 1fr ;
     grid-template-columns: 15% 85%;
     grid-template-areas: "my-skills logo";
+    border: solid 1px var(--yellow);
+    padding: 3px;
 }
 
 #my-skills{
@@ -213,10 +223,5 @@ a{
     height: 25px;
 }
 
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 
-}
 
