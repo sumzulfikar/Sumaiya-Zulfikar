@@ -1,20 +1,13 @@
-/* * {
-    outline:1px solid salmon;
-} */
-/* Global style of the webpage*//*#016295#283d5a #e5eec1#1c1c1e*#557c83#3aada8#a2d5ac*/
+/* Global style of the webpage*/
 :root {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
     --light:#dee7e8;
     --pop:#ec5743;
     --yellow:#fc9a1f;
     --white:white;
- 
-   /* --h4:#04c8a1;*/
-    --text:#1c1c1e;
- 
-    /*background-color: var(--black);*/
-    
+    --text:#1c1c1e; 
 }
+
 /*Defining colour and font height for h1,h2, h3 and h4*/
 body{
     background-color: var(--light);
@@ -42,8 +35,10 @@ h4{
 
 }
 
+/*Styling for mobile responsiveness*/
+
 @media screen and (max-width: 768px) {
-    /*Mobile Device responsive navigation*/
+       /*Mobile Device responsive navigation*/
 #menu{
     display:flex;
     flex-flow:column wrap;
@@ -74,12 +69,24 @@ h4{
 
 /* Mobile Device responsive skills layout*/
 #logo{
-    grid-area: logo;
+     grid-area: logo;
      display: flex;
      flex-direction: column;
      justify-content: space-around;
-     /* align-items: center; */
+     align-items: center; 
  }
+
+ /*Mobile Device responsive My Works Section*/
+#my-work{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:"work"
+                         "first-app1" 
+                         "second-app"
+                         "third-app"; 
+      
+}
  /* Mobile Device responsive footer*/
  footer{
     display: flex;
@@ -89,6 +96,8 @@ h4{
 }
 
 }
+/*Styling for desktop responsiveness*/
+
 @media screen and (min-width:  992px) {
 /*Desktop Device responsive Navigation*/
 #menu{
@@ -100,6 +109,8 @@ h4{
     padding:20px;
 
  }
+
+ 
 /*Desktop Device responsive Summary*/
  #summary{
     display: grid;
@@ -117,7 +128,7 @@ h4{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "about-me-title1 background1 background1";                           
-    /* border: solid 3px var(--yellow); */
+   
 }
 /* Desktop Device responsive skills layout*/
 #logo{
@@ -125,18 +136,31 @@ h4{
      display: flex;
      flex-direction: row;
      justify-content: space-around;
-     /* align-items: center; */
+   
  }
+
+ /*Desktop Device responsive My Works Section*/
+#my-work{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 15% 1fr 1fr;
+    grid-template-areas:"work first-app1 first-app1"
+                        "work second-app third-app"; 
+    overflow: hidden;
+    gap: 10px;
+}
+#first-app{
+    grid-area: 1 / 2 / 2/ span 4;
+   
+}
  /* Desktop Device responsive footer*/
  footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
 }
 
 }
-
 
 #about-me-title{
     grid-area: about-me-title1;
@@ -160,30 +184,16 @@ h4{
     grid-area: my-skills;
 }
 
-
-
-/*Style for My Works Section*/
-
-#my-work{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 15% 1fr 1fr;
-    grid-template-areas:"work first-app1 first-app1"
-                        "work second-app third-app"; 
-    overflow: hidden;
-    gap: 10px;
-}
-
-
-#my-work{
+#menu a:hover{
+    background-color: var(--pop);
+    color: var(--light);
     
+}
+#my-work{
     grid-area:work;
     
 }
-#first-app{
-    grid-area: 1 / 2 / 2/ span 4;
-   
-}
+
 #second-app{
     grid-area: second-app;
 }
@@ -225,8 +235,16 @@ a{
 
 .container{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction:row-reverse;
+   justify-content: space-between;
+   
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+
 }
 
 
