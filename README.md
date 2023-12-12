@@ -1,17 +1,16 @@
-# Sumaiya-Zulfikar
-Sumaiya's Portfolio as Front End Developer
+# Project Objective
 
+Created a personal Developer's portfolio for prospective employers looking to hire Front End Developers.
 
 ## Description
 
-This is my portfolio to showcase my skills as a Frontend Developer for those looking for a frontend developer in their organisation. Feel free to connect with me through the 
-contact me section and let us build products that customers love!
+This is my portfolio to showcase my skills as a Frontend Developer for organisations looking to build or improve their front-end website and applications.
+Feel free to connect with me through the contact me section  of my [portfolio](https://sumzulfikar.github.io/Sumaiya-Zulfikar/) and let us build products that customers love!
 Learning:
-I found drawing a wireframe of the portfolio in a simple tool excalidraw super useful before starting writing the html from scratch.
-It helped me visualise how I wanted to showcase the information before writing code.
+I found drawing a wireframe of the portfolio in a simple tool excalidraw before coding very helpful.
+The wireframe helped me visualise how I wanted to showcase the information before writing any code.
 
 ## Table of Contents 
-
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -20,9 +19,7 @@ It helped me visualise how I wanted to showcase the information before writing c
 
 ## Installation
 
-
 Click this link to see the profile: https://sumzulfikar.github.io/Sumaiya-Zulfikar/
-
 
 ![alt text](/images/application_ss.PNG)
 
