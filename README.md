@@ -19,7 +19,7 @@ It helped me visualise how I wanted to showcase the information before writting 
 ## Installation
 
 
-Click link to see the profile
+Click this link to see the profile: https://sumzulfikar.github.io/Sumaiya-Zulfikar/
 
 
 ![alt text](/images/application_ss.PNG)
