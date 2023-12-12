@@ -4,10 +4,12 @@ Sumaiya's Portfolio as Front End Developer
 
 ## Description
 
-This is a portfolio to showcase my skills as a Frontend Developer for potential employers.
+This is my portfolio to showcase my skills as a Frontend Developer for those looking for a frontend developer in their organisation. Feel free to connect with me through the 
+contact me section and let us build products that customers love!
 Learning:
 I found drawing a wireframe of the portfolio in a simple tool excalidraw super useful before starting writing the html from scratch.
 It helped me visualise how I wanted to showcase the information before writing code.
+
 ## Table of Contents 
 
 
@@ -35,7 +37,6 @@ MIT License
 ## Badges
 
 ![badmath](https://github.com/sumzulfikar?tab=achievements)
-
 
 
 ## Features
