@@ -7,7 +7,7 @@ Sumaiya's Portfolio as Front End Developer
 This is a portfolio to showcase my skills as a Frontend Developer for potential employers.
 Learning:
 I found drawing a wireframe of the portfolio in a simple tool excalidraw super useful before starting writing the html from scratch.
-It helped me visualise how I wanted to showcase the information before writting code.
+It helped me visualise how I wanted to showcase the information before writing code.
 ## Table of Contents 
 
 
