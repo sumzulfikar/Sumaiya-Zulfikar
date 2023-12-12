@@ -4,10 +4,12 @@ Sumaiya's Portfolio as Front End Developer
 
 ## Description
 
-This is a portfolio to showcase my skills as a Frontend Developer for potential employers.
+This is my portfolio to showcase my skills as a Frontend Developer for those looking for a frontend developer in their organisation. Feel free to connect with me through the 
+contact me section and let us build products that customers love!
 Learning:
 I found drawing a wireframe of the portfolio in a simple tool excalidraw super useful before starting writing the html from scratch.
-It helped me visualise how I wanted to showcase the information before writting code.
+It helped me visualise how I wanted to showcase the information before writing code.
+
 ## Table of Contents 
 
 
@@ -19,7 +21,7 @@ It helped me visualise how I wanted to showcase the information before writting 
 ## Installation
 
 
-Click link to see the profile
+Click this link to see the profile: https://sumzulfikar.github.io/Sumaiya-Zulfikar/
 
 
 ![alt text](/images/application_ss.PNG)
@@ -30,16 +32,11 @@ TAs Learning assisants and my tutors helped me throughout the project.
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+MIT License
 
 ## Badges
 
 ![badmath](https://github.com/sumzulfikar?tab=achievements)
-
 
 
 ## Features
@@ -48,7 +45,7 @@ Built by HTML and CSS
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+n/a
 
 ## Tests
 
