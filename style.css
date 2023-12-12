@@ -39,7 +39,10 @@ h4{
 
 @media screen and (max-width: 768px) {
        /*Mobile Device responsive navigation*/
-#menu{
+    /* body{
+        z-index: -2;
+    } */
+    #menu{
     display:flex;
     flex-flow:column wrap;
     align-items: end;
@@ -54,7 +57,7 @@ h4{
                          "b"
                          "c"
                          "d";
-  
+   
  }
 /*Mobile Device responsive About me Section*/
  #about-me{
@@ -85,7 +88,7 @@ h4{
                          "first-app1" 
                          "second-app"
                          "third-app"; 
-      
+    position: relative;  
 }
  /* Mobile Device responsive footer*/
  footer{
@@ -118,7 +121,7 @@ h4{
     grid-template-columns:15% 35% 15% 35% ;
     grid-template-areas: "a b c d";
     border: solid 1px var(--yellow);
-  
+    z-index: 2;
  }
 
  /*Desktop Device responsive About me Section*/
@@ -131,6 +134,7 @@ h4{
    
 }
 /* Desktop Device responsive skills layout*/
+
 #logo{
     grid-area: logo;
      display: flex;
@@ -140,6 +144,7 @@ h4{
  }
 
  /*Desktop Device responsive My Works Section*/
+
 #my-work{
     display: grid;
     grid-template-rows: auto;
@@ -149,6 +154,7 @@ h4{
     overflow: hidden;
     gap: 10px;
 }
+
 #first-app{
     grid-area: 1 / 2 / 2/ span 4;
    
@@ -165,6 +171,7 @@ h4{
 #about-me-title{
     grid-area: about-me-title1;
 }
+
 #background{
    grid-area: background1;
 }
@@ -189,6 +196,7 @@ h4{
     color: var(--light);
     
 }
+
 #my-work{
     grid-area:work;
     
@@ -209,15 +217,18 @@ h4{
     max-width: 50px;
     max-height: 50px;
 }
+
 .lg{
     max-width: 100px;
     max-height: 100px;
 }
+
 a{
     text-decoration: none;
     font-size: 32px;
 }
 /*Navigation button decoration */
+
 .option{
     padding: 10px;
     margin: 5px;
@@ -225,12 +236,12 @@ a{
     color: var(--pop);
     background-color: var(--white);
     align-self: flex-end;
-    /* transition: all 0.5s ease-in-out; */
+   
 }
+
 .heading{
     background-color: var(--light);
-    padding: 15px;
-    height: 25px;
+     
 }
 
 .container{
@@ -243,8 +254,6 @@ a{
     display: flex;
     flex-direction: column;
     align-items: start;
-    
-
 }
 
 
